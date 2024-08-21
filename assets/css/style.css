@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --light-bg: #f4eae2;
+    --primary-colour: #523900;
+    --green: #00be75;
+    --box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    --text-shadow-dark: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
+    --text-shadow-light: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    --bs-navbar-active-color: #00be75;
+    --bs-dropdown-link-active-bg: #523900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--light-bg);
+    color: #523900;
+    font-family: 'Josefin sans', serif;
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rokkitt', sans-serif;
+}
+h1 {
+    color: #00be75;
+    font-family: 'Josefin sans', sans-serif;
+    font-size: 7.2rem;
+    font-weight: 900;
+    line-height: 0.85;
+    text-align: center;
+    padding: 3rem;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+h3,
+.accordion-header h2 {
+    font-size: 4.8rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 2.4rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 1rem 2rem;
+}
+
+section {
+    padding-bottom: 6rem;
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+.nav-link {
+    font-size: 2.4rem;
+}
+
+header {
+    min-height: 60vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../images/next_icon.png);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../images/prev_icon.png);
+}
+
+.carousel-item img {
+    width: 60%;
+    max-height: 48rem;
+}
+
+a {
+    color: #00be75;
+    text-decoration: none;
+}
+
+.light {
+    background-color: aliceblue;
+    padding: 3rem 0;
+}
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.icon {
+    text-align: center;
+    font-size: 6rem;
+    color: var(--green);
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.accordion {
+    --bs-accordion-btn-bg: #f4eae2;
+    --bs-accordion-active-bg: #f4eae2;
+    --bs-accordion-border-color: #523900;
+    --bs-accordion-btn-color: #523900;
+    --bs-accordion-active-color: #523900;
+}
+
+.accordion-button {
+    font-size: 2.4rem;
+}
+
+/* Footer */
+
+footer {
+    min-height: 15vh;
+    background-color: var(--primary-colour);
+    color: var(--green);
+    font-weight: bold;
+    align-items: center;
+    justify-items: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    list-style: none;
+}
+
+footer a {
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer a:hover {
+    transition: 0.4s ease;
+}
+
+#facebook:hover {
+    color: #4267b2;
+}
+
+#twitter:hover {
+    color: #00acee;
+}
+
+/* https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background */
+/* https://css-tricks.com/snippets/css/gradient-text/ */
+
+#instagram:hover {
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#youtube:hover {
+    color: red;
+}
+
+.footer-links a {
+    font-size: 1.4rem;
+}
